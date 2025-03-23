@@ -45,6 +45,7 @@ public class UserController {
 	public Map<Integer, String> getStates(@PathVariable("countryId") Integer countryId) {
 		Map<Integer,String> statesMap = userService.getStates(countryId);
 		System.out.println("statesMap>>>>"+statesMap);
+		System.out.println("Updated");
 		return statesMap;
 	}
 	
